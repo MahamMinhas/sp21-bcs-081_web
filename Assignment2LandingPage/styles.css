@@ -1,7 +1,20 @@
-.header {
+#myHeader {
     padding: 10px 16px;
-    background: rgb(111, 179, 111);
+    background-color: rgb(33, 138, 138);
     color: #f1f1f1;
+  }
+  .header
+  {
+    
+    background-color:rgb(33, 138, 138) ;
+  }
+  .container-fluid
+  {
+    background-color: rgb(33, 138, 138);
+  }
+  #myHeader
+  {
+    background-color:rgb(33, 138, 138) ;
   }
   
   /* Page content */
