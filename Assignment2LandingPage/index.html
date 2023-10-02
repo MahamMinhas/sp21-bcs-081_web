@@ -13,6 +13,7 @@
              <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <!-- Header -->
     <div class="header" id="myHeader">
         <header class="fixed-top">
             <nav class="navbar navbar-expand-lg navbar-light ">
@@ -39,17 +40,45 @@
             </nav>
         </header>
       </div>
-
-      <section class="showcase">
-        <div class="video-container">
-            <video src="./images/backgroundvideo.mp4" autoplay muted loop></video>
+<!-- Slide images -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide container">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="content-overlay">
-            <h1>"Connecting Your World."</h1>
-            <h3>About</h3>
-            <a href="#About" class="btn">Read More</a>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="./images/TV & AV 1.png" class="d-block w-100" alt="TV & AV">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>TV & AV</h5>
+              <p>We're constantly reimagining what the screen can do.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./images/mobile phones  1 (2).png" class="d-block w-100" alt="Phones">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mobile phones</h5>
+              <p>Find which one is for you.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/latest wrist wa 0.png" class="d-block w-100" alt="watches">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Watches</h5>
+              <p>Value time.</p>
+            </div>
+          </div>
         </div>
-    </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
 <section id="about">
     <h1>About</h1>
@@ -63,13 +92,10 @@
     </p>
 
     <h2>Follow Us On Social Media</h2>
-
-    <div class="social">
-    <a href="https://twitter.com/traversymedia" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
-        <a href="https://facebook.com/traversymedia" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
-        <a href="https://github.com/bradtraversy" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-        <a href="https://www.linkedin.com/in/bradtraversy" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-    </div>
+<!-- social icons  -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
 </section>
 
 <section id="Categories">
@@ -84,9 +110,18 @@
           <img src="./images/mobile phones  1.png" alt="S25" style="width:100%">
         </div>
         <div class="column">
-          <img src="./images/mobile phones  1 (1).png" alt="S20 ultra" style="width:100%">
+          <img src="./images/mobile phones  0 (2).png" alt="S20 ultra" style="width:100%">
         </div>
-      </div>
+        <div class="column">
+            <img src="./images/mobile phones  1 (2).png" alt="S20 ultra" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="./images/mobile phones  1 (1).png" alt="S20 ultra" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="./images/mobile phones  0 (1).png" alt="S20 ultra" style="width:100%">
+          </div>
+    </div>
       <h2>TV & AV</h2>
       <a href="TV & AV" class="btn">TV & AV </a>
       <div class="row">
@@ -95,12 +130,56 @@
         </div>
         <div class="column">
           <img src="./images/TV & AV 1.png" alt="j-series" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="./images/AV's for compan 1.png" alt="coming soon" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="./images/AV's 0.png" alt="coming soon" style="width:100%">
+                </div>
 
       </div>
+      <h2>Watches & Clocks</h2>
+      <a href="Watches & clocks" class="btn">Learn more </a>
+      <div class="row">
+        <div class="column">
+          <img src="./images/latest wrist wa 0.png" alt="t-series" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="./images/latest wrist wa 1.png" alt="j-series" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="./images/wall clocks 1.png" alt="coming soon" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="./images/artistic wall c 0.png" alt="coming soon" style="width:100%">
+                </div>
+
+      </div>
+      
       
 
 
 </section>
+<footer>
+    <div>
+        <a href="#">Support</a>
+        <a href="#">Where to buy</a>
+        <a href="#">Service Centers</a>
+        <a href="#">Warranty Policy</a>
+        <a href="#">Exclusive Services</a>
+    </div>
+    <div>
+        <a href="#">About Us</a>
+        <a href="#">IT Oasis</a>
+        <a href="#">Leadership Team</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Trust Center</a>
+    </div>
+    <div class="copyright">
+        &copy; 2023 IT Oasis. All Rights Reserved.
+    </div>
+</footer>
     
 </body>
 </html>
