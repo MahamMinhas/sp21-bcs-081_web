@@ -15,6 +15,7 @@
 
   
   .header {
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,8 +55,8 @@
     padding: 10px 20px;
   }
   .register-btn:hover {
-    color: black;
-    background-color: #fff;
+    color: white;
+    background-color: black;
   }
   
   .login-btn {
@@ -65,7 +66,7 @@
     padding: 10px 20px;
   }
   .login-btn:hover {
-    color: white;
+    color: black;
     background-color: #eb01a5;
   }
   
