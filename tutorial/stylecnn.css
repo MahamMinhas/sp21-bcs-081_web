@@ -1,0 +1,84 @@
+ /* CSS code for styling the elements */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 100px;
+  }
+
+  .logo {
+    width: 200px;
+    margin-left: 20px;
+  }
+
+  .menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .menu-item {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .menu-item:hover {
+    background-color: #333333;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    margin: 20px;
+  }
+
+  .main-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .article-image {
+    width: 150px;
+    height: 100px;
+  }
+
+  .article-content {
+    margin-left: 10px;
+  }
+
+  .article-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  .article-summary {
+    font-size: 14px;
+    color: #666666;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+  }
