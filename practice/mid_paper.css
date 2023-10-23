@@ -1,0 +1,45 @@
+ /* CSS code for styling the elements */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(155, 19, 19);
+    color: white;
+    height: 60px;
+  }
+
+  .logo {
+    width: 200px;
+    margin-left: 20px;
+  }
+
+  .menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .menu-item {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .menu-item:hover {
+    background-color: #333333;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .main-image {
+    width: 700px;
+    height: 200px;
+  }
