@@ -80,3 +80,126 @@ button {
 button:hover {
   background-color: rgb(140, 104, 173);
 }
+.reviews{
+  background-color: black;
+  padding: 10, 15;
+
+}
+.reviews h1{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.review-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.reviews p{
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-and-text {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin-right: 10px;
+}
+.image-and-text:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.card {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  gap: 20px;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+/* CSS code */
+.section {
+  /* Create a gradient background from blue to purple */
+  background-image: linear-gradient(to right, blue, purple);
+
+  /* Add some padding and a white text color */
+  padding: 20px;
+  color: white;
+  gap: 20px;
+}
+
+.section h1 {
+  /* Center the main heading */
+  text-align: center;
+  font-size: 36px;
+}
+
+.section p {
+  /* Center the subheading */
+  text-align: center;
+  font-size: 18px;
+}
+
+.section form {
+  /* Align the form horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section input {
+  /* Resize and style the input field */
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.section button {
+  /* Style the submit button */
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.section i {
+  /* Style the search icon */
+  font-size: 20px;
+  color: blue;
+}
+
