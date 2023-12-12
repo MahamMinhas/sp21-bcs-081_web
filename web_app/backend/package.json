@@ -4,8 +4,9 @@
   "description": "",
   "main": "contactform.js",
   "scripts": {
+    "start": "nodemon app.js" ,
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon src/app.js"
+    "dev" : "node src/app.js"
 
   },
   "keywords": [],

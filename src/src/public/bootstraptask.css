@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css?family=Meie+Script|Shadows+Into+Light|Arvo|Monda');
+
+h1
+{font-family: 'Playfair Display',serif;
+    font-weight: 700;
+   
+    }
+    
+#logo img
+    {
+        width: 300px;
+        height: 200;
+        text-align: center;
+        margin-left: 500px;
+        margin-top: 20px;
+    }
+    .Menu{
+        align-items: center;
+    }
+    .Menu li
+    {display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        margin-right: 70PX;
+        text-align: center;
+    
+    }
+    .Menu 
+    {
+    text-align: center;
+    margin-top: 10px;
+     
+    }
+    .container-fluid
+    {
+        background-color: #86000a;
+    width: 100%;
+    height: 60px;
+    margin-top: -20PX;
+    margin-left: -15px;
+    padding-right: 30px;
+    }
+    .container-fluid p
+    {
+        color: #86000a;
+  display: none;
+    }
+    
+    .Menu-link {
+        position: relative;
+        color: gray;
+       font-weight: bold;
+        font-size: 19px;
+        
+    }
+    .Menu-item a:hover
+    {
+        color: #86000a;
+       
+        
+    }
+    .Menu-item a
+    {
+        text-decoration: none;;
+        
+    }
+    .Menu button
+    {
+        background-color: #86000a;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 9px;
+
+    }
+    .Menu button:hover
+    {
+        color: grey;
+        background-color:rgb(248, 192, 192)
+    }
+     .Menu-item a:hover::after 
+     {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            margin-bottom: -7px;
+            bottom: 0;
+            left: 0;
+            color: #86000a;
+            font-size: 19px;
+            text-decoration: none;
+            
+    }
+    #logo
+    {
+        display: inline-block;
+    }
+    #logo col-3 h1
+    {  
+       margin-left: 500px;
+       margin-top: 50px;
+       font-size: 70px;
+       color: #86000a;
+       
+
+    }
+    #logo col-9 img
+    {
+       width: 170px;
+       height: 170px;
+      margin-left: 700px;
+       margin-top: -140px;
+    }
+    #Hero
+    {
+        background-image: url('./images/hero.jpg');
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+       background-size: cover;
+    }
+    #card 
+    {
+        padding-top:170px ;
+        padding-bottom: 40px;
+        width:500px;
+       margin-left: 250px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #card p
+    {
+        margin-top: 30px;
+        font-size: 21px;
+        margin-bottom: 30px;
+        line-height: 37px;
+    }
+    #card h1
+    {
+        font-size: 47px;
+        color: #86000a;
+        font-weight: bold;
+       
+    }
+    #card button{
+        margin-top: 30px;
+        background-color: #86000a;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 13px;
+        text-align: center;
+        width: 170px;
+        font-weight: bold;
+       
+    }
+    #card button:hover
+    {
+        color: #86000a;
+        background-color: rgb(247, 238, 225);
+    }
+    .products img
+    {
+        width: 300px;
+        height: 360px;
+    }
+    
+    .products
+    {
+        align-items: center;
+        display: inline-block;
+        text-align: center;
+    }
+    .products p
+    {
+        font-size: 21px;
+    }
+    .products button
+    {
+        
+        background-color: #86000a;
+        color: white; 
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+       
+    }
+    .products button:hover
+    {
+       
+        color: #86000a;
+        background-color: rgb(247, 238, 225);
+       
+    }
+    .PRODUCTS
+    {
+        margin-top: 50px;
+    }
+    .PRODUCTS h1
+    {
+        color: #86000a;
+        font-size: 57px;
+        text-align: center;
+     
+    }
+    .PRODUCTS p
+{ 
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    font-size: 21px;
+}
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+    @keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    } 
+  
+#land 
+{
+    background-image: url('./images/cake4.jpg'); 
+    width: 100%;
+   height: 70vh;
+   background-size: cover;
+   background-attachment: fixed;
+   margin-bottom: 40px;
+   
+}
+ .card2 h1
+{
+    color: white;
+    font-size: 49px;
+    padding-top: 230px;
+   
+}
+#land h1
+{
+    color: white;
+    font-size: 49px;
+ 
+    margin-left: -90px;
+   
+}
+.card2 button
+{
+    background-color: #86000a;
+        color: white; 
+        padding: 14px;
+        text-align: center;
+        font-weight: bold;
+        margin-left: -90px;
+   
+       margin-top: 30px;
+       
+      
+}
+.card2
+{
+    margin-left: 1200px;
+    margin-top: 170px;
+    padding-bottom: 230px;
+   
+}
+.card2 button:hover
+{
+    color: #86000a;
+    background-color: rgb(247, 238, 225);
+       
+       
+}
+.about-us 
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+    background-color: rgb(112, 110, 110);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#about-us  .col-6 h1
+{
+    font-size: 47px;
+    color: #86000a;
+        font-weight: bold;
+        text-align: end;
+        padding:70px;
+        padding-top: 130px;
+       
+}
+#about-us .col-6 p
+{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 70px;
+    line-height: 37px;
+    font-size: 21px;
+}
+.col-5 
+{
+    border-right: 1px solid rgb(41, 40, 40);
+    width: 70%;
+}
+#about-us .col-6 button{
+
+    background-color: #86000a;
+        color: white; 
+        padding: 14px;
+        text-align: center;
+        font-weight: bold;
+        width: 200px;
+       margin-left: 73px;
+      margin-bottom: 40px;
+      margin-top: 20px
+        
+
+     
+}
+#about-us .col-6 button:hover{
+    color: #86000a;
+    background-color: rgb(247, 238, 225);
+    font-size: 19px;
+
+}
+
+.vertical-line
+{
+    border-right: 1px solid black;
+    width: 100%;
+}
+
+#blog
+{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+#blog h1
+{
+    color: #86000a;
+        font-size: 57px;
+        text-align: center;
+}
+#blog .col-6 img
+{
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+    border: 2px solid #86000a;;
+}
+#blog .col-6 h2{
+    font-size: 25px;
+    color:rgb(39, 39, 39);
+   margin-top: 15px;
+   text-align: start;
+    
+}
+#blog .col-6 p
+{
+    font-size: 19px;
+text-align: start;
+margin-top: 7px;
+}
+
+#blog .col-6 a
+{
+    
+    font-size: 19px;
+    font-weight: bold;
+    color: #86000a;
+    text-decoration: none;
+    float: left;
+}
+#blog .col-6 a:hover
+{
+    color: black;
+   
+    
+}
+#blog button
+{
+    background-color: #86000a;
+        color: white; 
+        padding: 14px;
+        text-align: center;
+        font-weight: bold;
+        width: 250px;
+        margin-top: 57px;
+        font-size: 19px;
+       
+       
+}
+#blog  button:hover{
+    color: #86000a;
+    background-color: rgb(247, 238, 225);
+   
+  
+
+}
+#contact
+{
+    margin-top: 100px;
+    background-image: url(./images/hero2.jpg);
+    background-size: cover;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#contact .contact1 img
+{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+#contact h1
+    {
+        font-size: 53px;
+        color: white;
+        padding-top: 40px;
+    }
+    #contact p
+    {
+        font-size: 21px;
+        color: white;
+    }
+    #contact button
+    {
+        background-color: #86000a;
+        color: white; 
+        padding: 14px;
+        text-align: center;
+        font-weight: bold;
+        width: 210px;
+       margin-top: 20px;
+        font-size: 19px;
+    }
+    #contact button:hover
+    {
+        color: #86000a;
+        background-color: rgb(247, 238, 225);
+    }
+    #contact h2
+    {
+        font-size: 33px;
+        color: white;
+        padding-top: 20px;
+    }
+ #footer
+ {
+    background-color:#0c0c0c;
+    margin-top:-10px ;
+    color: white;
+    align-items: center;
+    margin-top: 15px;
+ }
+ #footer .row
+ {
+    
+    text-align: center;
+    margin-top:5px;
+    border-top: 1px solid white;
+ }
+#footer p
+{
+    background-color:#0c0c0c; 
+   justify-content: center;
+   border-top: 3 px solid white;
+   padding-top:7px ;
+}
+#footer .part
+{
+    background-color: black;
+}
+#footer button
+{
+    background-color: #86000a;
+    color: white; 
+    padding: 14px;
+    text-align: center;
+    font-weight: bold;
+    width: 290px;
+   margin-top: 50px;
+   margin-bottom:50px ;
+    font-size: 19px;
+    
+}
+#footer button:hover
+{
+    color: #86000a;
+    background-color: rgb(247, 238, 225);
+}
+#footer .col-6
+{
+    border-right: 1px solid white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideInLeft {
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    }
+    @keyframes slideInLeft {
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    } 
+    .zoom-in-out-box {
+        margin: 15px;
+        width: 25px;
+        height: 25px;
+      
+        animation: zoom-in-zoom-out 4s ease infinite;
+      }
+      
+      @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+        }
+        25% {
+          transform: scale(1.2, 1.2);
+        }
+        50% {
+          transform: scale(1, 1);
+        }
+        75% {
+          transform: scale(0.8, 0.8);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+      }
+      

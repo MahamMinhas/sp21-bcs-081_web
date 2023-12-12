@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Data</title>
+    <link rel="stylesheet" href="./API.css">
+</head>
+<body>
+    <h1>API Data</h1>
+    <div id="api-data-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+    $.ajax({
+        url: "https://jsonplaceholder.typicode.com/posts",
+        type: "GET",
+        success: function (data) {
+           
+            $.each(data, function (key, value) {
+                // Create a div element for each data item and add a class
+                var dataItemDiv = $("<div class='api-data-item'></div>");
+
+                // Append data to the div with appropriate HTML structure and styling
+                dataItemDiv.append(
+                    "<h2 class='data-User'>" + "UserID:"+" " + value.userId + "</h2>" +
+                    "<h2 class='data-ID'>"+ "ID:"+" " + value.Id+ "</h2>" +
+                    "<p class='data-title'>" + "TITLE:"+" " + value.title + "</p>" +
+                    "<p class='data-body'>" + "BODY:"+" " + value.body + "</p>" 
+                    
+                );
+
+                // Append the data item div to the API data container
+                $("#api-data-container").append(dataItemDiv);
+            });
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

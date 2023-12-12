@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstraptask.css">
+    <link rel="stylesheet" href="bootstraptask.js">
+    <link rel="stylesheet" href="./API.html">
+    <link rel="stylesheet" href="./server.js">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <title>Vienna Bakery</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <p style="color: rgba(24, 6, 3, 0.801)"> 2023</p>
+    </div>
+
+    <div id="logo">
+        <div class="row">
+            <col-3>
+                <h1>Anna's</h1>
+            </col-3>
+            <col-9><img src="./images/logo1.png" alt=""></col-9>
+
+        </div>
+    </div>
+
+    <ul class="Menu ">
+        <li class="Menu-item">
+            <a class="Menu-link " href="#">HOME</a>
+        </li>
+        <li class="Menu-item">
+            <a class="Menu-link" href="">ABOUT US</a>
+        </li>
+        <li class="Menu-item">
+            <a class="Menu-link" href="">BREADS</a>
+        </li>
+        <li class="Menu-item">
+            <a class="Menu-link " href=" # ">CAKES</a>
+        </li>
+        <li class="Menu-item">
+            <a class="Menu-link " href="#">PASTRIES</a>
+        </li>
+        <li class="Menu-item">
+            <a class="Menu-link" href="">COOKIES </a>
+        </li>
+        <li class="Menu-item">
+            <a class="Menu-link" href="">BLOGS</a>
+            <li class="Menu-item">
+                <button class="Menu-link" id="contactus">CONTACT US</button>
+
+            </li>
+    </ul>
+    <section id="Hero">
+
+
+
+        <div id="card">
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque ipsam harum laborum aut iste nulla.
+            </p>
+            <h1>Bread, Cakes, Pastery and Much More!</h1>
+            <button>SHOP NOW</button>
+
+        </div>
+
+
+
+    </section>
+
+    <div class="container PRODUCTS" id="sale">
+        <h1>ANNA's BAKERY</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum culpa eligendi a <br>obcaecati modi <span
+                style="color: brown;font-weight: bold;">libero mollitia </span>excepturi illo veniam labore.</p>
+        <div class="row">
+            <div class="col">
+                <div class="products">
+                    <img src="./images/pastry.png" class="card-img-top zoom-in-out-box" id="Img1">
+                    <div class="card-body">
+                        <p class="card-text">PASTRY</p>
+                        <button class="btn ">VIEW PRODUCTS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="products">
+                    <img src="./images/bread.png" class="card-img-top zoom-in-out-box" id="Img2">
+                    <div class="card-body">
+                        <p class="card-text">BREADS</p>
+                        <button class="btn ">VIEW PRODUCTS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="products">
+                    <img src="./images/cake.png" class="card-img-top zoom-in-out-box" id="Img3">
+                    <div class="card-body">
+                        <p class="card-text">CAKES</p>
+                        <button class="btn ">VIEW PRODUCTS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="land">
+        <div class="card2">
+            <h1>Speciality Cakes</h1>
+            <button id="load-data">VIEW PRODUCTS</button>
+            <!-- Create a container for the API data -->
+            <div id="api-data-container"></div>
+        </div>
+    </div>
+
+    <div id="about-us">
+
+        <div class="row">
+            <div class="col-6 vertical-line">
+                <h1>About Anna's Bakery</h1>
+            </div>
+
+            <div class="col-6 "><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum nam et
+                    laboriosam, voluptas pariatur excepturi placeat distinctio quas cupiditate magni, a nesciunt eius
+                    molestias tempore dolore ratione aperiam modi.</p>
+                <button>READ MORE</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="blog">
+        <h1>Latest Blog Posts By Anna's Bakery</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="./images/blog1.jpg" id="blog1">
+                    <h2>SEASON'S GREETINGS FROM ANNA'S BAKERY</h2>
+                    <p><b>AUTHOR:</b><span span style="color: brown;"><b>ANNA BAKERY</b> </span></p>
+                    <p>Happy Holidays from Anna's Bakery, Wishing you a joyus and safe Holiday season and Happy New
+                        Year 2023!</p>
+                    <a href="#">CLICK HERE TO READ FULL ARTICLE</a>
+                </div>
+                <div class="col-6">
+                    <img src="./images/blog2.jpg" id="blog1">
+                    <h2>SEASON'S GREETINGS FROM ANNA'S BAKERY</h2>
+                    <p><b>AUTHOR:</b><span span style="color: brown;"><b>ANNA BAKERY</b> </span></p>
+                    <p>Happy Holidays from Anna's Bakery, Wishing you a joyus and safe Holiday season and Happy New
+                        Year 2023!</p>
+                    <a href="#" style="margin-right: 50px;">CLICK HERE TO READ FULL ARTICLE</a>
+                </div>
+            </div>
+            <button>VIEW ALL POSTS</button>
+        </div>
+
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="col">
+                <h1>CONTACT ANNA'S BAKERY</h1>
+                <p>Your Bread, Cakes and Pastries in Your Town</p>
+
+                <!-- Add a button to trigger the modal -->
+                <button type="button" id="contactbutton">
+                    GET IN TOUCH
+                </button>
+                <h2>BUSINESS HOURS:</h2>
+                <p>Tue To Fri: 8AM to 5PM | Sat: 7AM to 4PM | Sun & Mon: Close</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+   
+
+    <!-- Add jQuery and Bootstrap JS (-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+
+    <script>
+        $(document).ready(function () {
+            $("#load-data").on("click", function () {
+                // Open the new page in a new window or tab
+                window.open("http://127.0.0.1:5500/API.html", "_blank");  // Update the URL with your server address
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#contactus").on("click", function () {
+                // Open the new page in a new window or tab
+                window.open("http://localhost:9000/register");
+            });
+        });
+    </script>
+<script>
+    $(document).ready(function () {
+       $("#contactbutton").on("click", function () {
+           // Open the new page in a new window or tab
+           window.open("http://localhost:9000/register", "_blank");  // Update the URL with your server address
+       });
+   });
+</script>
+
+    
+
+</body>
+
+</html>
