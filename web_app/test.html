@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            width: 100%;
+            height: 100%;
+        }
+
+        .login-content {
+            padding: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .login-content h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .login-content label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .login-content input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+
+        .login-content button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: 1px black;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .login-content a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .login-image {
+            flex: 1;
+            background-image: url('https://media2.giphy.com/media/ka0JauiBhKkSs/giphy.gif');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .login-content button:nth-child(2) {
+            margin-left: 10px;
+            margin-bottom: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-content">
+            <h2>Welcome back! Please enter your details</h2>
+
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Log in</button>
+            </form>
+
+            <a href="#">Forgot password?</a>
+
+            <h3>Or Continue with</h3>
+
+            <button type="button"> Google</button>
+            <button type="button">Facebook</button>
+
+            <p>Don't have account? <a href="#">Sign up</a></p>
+        </div>
+        <div class="login-image"></div>
+    </div>
+</body>
+</html>
