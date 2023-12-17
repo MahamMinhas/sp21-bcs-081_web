@@ -2,56 +2,79 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const Register = require("./models/schema");
-const { json } = require("express");
+const multer = require('multer');
+const upload = multer(); // Initialize multer
 require("./db/connect");
 
-const port = process.env.PORT || 5000;
+const port = 8888;
+const static_path = path.join(__dirname,'..' ,'public'); // Corrected static path
 
-console.log(__dirname);
-
-const static_path = path.join(__dirname, './public');
 app.use(express.static(static_path));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/public/structure.html"));
+    res.sendFile(path.join(__dirname, '../public/structure.html'));
 });
-
-// Assuming you have a view engine set up, otherwise, you need to set up one.
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/welcome.html'));
+});
+app.get("/about", (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/about.html'));
+});
+app.get("/services", (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/services.html'));
+});
 app.get("/register", (req, res) => {
-  res.render("register"); // Fix the typo in the template name
+    res.sendFile(path.join(__dirname, '../public/contactform.html'));
 });
 
-// Create a new user
-app.post("/register", async (req, res) => {
-  try {
-    const { firstname, lastname, email, contactNumber, areaCode, preferredTime, preferredDay, service, message } = req.body;
+app.post("/register", upload.none(), async (req, res) => {
+    try {
+        console.log("Received data:", req.body);
 
-    // Create a new user using the Register model
-    const newUser = new Register({
-      firstname,
-      lastname,
-      email,
-      contactNumber,
-      areaCode,
-      preferredTime,
-      preferredDay,
-      service,
-      message
-    });
+        const {
+            firstName,
+            lastName,
+            email,
+            contactNumber,
+            areaCode,
+            preferredPhysio,
+            preferredTime,
+            preferredDay,
+            service,
+            message
+        } = req.body;
 
-    // Save the new user to the database
-    const register = await newUser.save();
+        // Create a new user using the Register model
+        const newUser = new Register({
+            firstName,
+            lastName,
+            email,
+            contactNumber,
+            areaCode,
+            preferredPhysio,
+            preferredTime,
+            preferredDay,
+            service,
+            message
+        });
 
-    // Send a success response
-    res.status(201).sendFile(path.join(__dirname, "public/contactform.html"));
-  } catch (error) {
-    console.error(error); // Log the error to the console
-    res.status(400).send("Error creating user");
-  }
+        // Save the new user to the database
+        const register = await newUser.save();
+
+        console.log("User registered:", register);
+
+        // Send a success response
+        res.status(201).sendFile(path.join(__dirname, '../public/contactform.html'));
+    } catch (error) {
+        console.error('Error creating user:', error);
+        res.status(400).send("Error creating user");
+    }
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+    console.log(`Server is running on http://localhost:${port}`);
+  });
+  
+console.log(__dirname);

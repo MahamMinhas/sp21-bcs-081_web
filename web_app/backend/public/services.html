@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PeakPulse</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plans and Pricing</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .header {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .pricing-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .pricing-card {
+      width: 300px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .pricing-card h2 {
+      color: #333;
+    }
+
+    .pricing-card p {
+      color: #666;
+    }
+
+    .pricing-card button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .pricing-card button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-    <div id="app"></div>
-    <script src="script.js"></script>
+  <div class="header">
+    <h1>Choose Your Plan</h1>
+    <p>Select the plan that best fits your needs</p>
+  </div>
+
+  <div class="pricing-container">
+    <div class="pricing-card">
+      <h2>Basic</h2>
+      <p>Perfect for beginners</p>
+      <p>Access to basic features</p>
+      <p>Limited workouts</p>
+      <p>Community support</p>
+      <p><strong>$19.99/month</strong></p>
+      <a href="./Contactform.html">Get Started</button>
+    </div>
+
+    <div class="pricing-card">
+      <h2>Pro</h2>
+      <p>For intermediate users</p>
+      <p>Full access to all features</p>
+      <p>Unlimited workouts</p>
+      <p>Personalized plans</p>
+      <p><strong>$39.99/month</strong></p>
+      <a href="./Contactform.html">Get Started</button>
+    </div>
+
+    <div class="pricing-card">
+      <h2>Premium</h2>
+      <p>For advanced users</p>
+      <p>Premium features and support</p>
+      <p>Customized workout plans</p>
+      <p>24/7 customer support</p>
+      <p><strong>$59.99/month</strong></p>
+      <a href="./Contactform.html">Get Started</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Peak Pulse. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
