@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to PeakPulse</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Prevent scrollbars caused by the video */
+    }
+
+    /* Style for the video container */
+    #video-container {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1; /* Place it behind the content */
+      overflow: hidden;
+    }
+
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .welcome-container {
+      position: relative;
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.8); /* Add an overlay to make text more readable */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      z-index: 1; /* Place it above the video */
+    }
+
+    .logo img {
+      max-width: 100px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Video Container -->
+  <div id="video-container">
+    <video autoplay muted loop>
+      <source src="./images/video (2160p).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Content Container -->
+  <div class="welcome-container">
+    <div class="logo">
+      <img src="./images/pngwing.com (1).png" alt="PeakPulse Logo">
+    </div>
+    <h1>Welcome to PeakPulse</h1>
+    <p>Your personalized nutrition tracking app</p>
+    <a href="./services.html" type="button">Get Started</button>
+  </div>
+</body>
+
+</html>

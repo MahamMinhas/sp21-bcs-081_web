@@ -2,14 +2,14 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const Register = require("./models/schema");
-const User = require("./models/Userschema"); // Import the User model
+const User = require("./models/Userschema"); 
 const multer = require('multer');
-const upload = multer(); // Initialize multer
-const bcrypt = require('bcrypt'); // Import bcrypt
+const upload = multer(); 
+const bcrypt = require('bcrypt'); 
 require("./db/connect");
 
 const port = 8888;
-const static_path = path.join(__dirname, '..', 'public'); // Corrected static path
+const static_path = path.join(__dirname, '..', 'public'); 
 
 app.use(express.static(static_path));
 app.use(express.json());
