@@ -1,48 +1,29 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const userSchema = new mongoose.Schema({
-  firstname: {
+const appointmentSchema = new mongoose.Schema({
+  firstName: {
     type: String,
-    required: true,
+    required: true
   },
-  lastname: {
+  lastName: {
     type: String,
-    required: true,
+    required: true
   },
-  
   email: {
     type: String,
-    required: true,
+    required: true
   },
   contactNumber: {
-    type: String, 
-    required: true,
-  },
-  areaCode: {
     type: String,
-    required: true,
+    required: true
   },
-  preferredPhysio: {
-    type: String,
-    default: '',
-  },
-  preferredTime: {
-    type: String,
-    required: true,
-  },
-  preferredDay: {
-    type: String,
-    required: true,
-  },
-  service: {
-    type: String,
-    required: true,
-  },
-  message: {
-    type: String,
-    required: true,
-  },
+  areaCode: String,
+  preferredPhysio: String,
+  preferredTime: String,
+  day: String,
+  service: String,
+  message: String
 });
 
-const Register = mongoose.model("Customer", userSchema);
+const Register = mongoose.model('Register', appointmentSchema);
 module.exports = Register;

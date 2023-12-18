@@ -1,23 +1,31 @@
-function submitForm() {
-    // Get the form data
-    var firstName = document.getElementById('first-name').value;
-    var lastName = document.getElementById('last-name').value;
-    var email = document.getElementById('email').value;
-    var contactNumber = document.getElementById('contact-number').value;
-    var areaCode = document.getElementById('area-code').value;
-    var preferredPhysio = document.getElementById('preferred-physio').value;
-    var preferredTime = document.getElementById('preferred-time').value;
-    var day = document.getElementById('day').value;
-    var service = document.getElementById('service').value;
-    var message = document.getElementById('message').value;
+// contactform.js
 
-    // Display submitted data
-    alert('Form submitted successfully');
-
-    // Optionally, you can send the data to a server using AJAX
-
-    // Clear the form
-    document.getElementById('contactForm').reset();
-
-    return false;
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('logo-container');
+  
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+  
+      const formData = new FormData(form);
+  
+      fetch('/register', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(data => {
+        console.log(data); // You can handle the success response here
+        // Optionally, redirect to another page or update the UI
+      })
+      .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+        // Handle the error
+      });
+    });
+  });
+  

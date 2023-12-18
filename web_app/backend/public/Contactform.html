@@ -1,31 +1,35 @@
 <!DOCTYPE html>
- <html lang="en">
-     <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <!-- Path to JavaScript file -->
-        <script src="./contactform.js"></script>
-        <script src="./javascript.js"> </script>
-     <title>Appointment Form</title>
-     <!-- styles-->
-      <style>
-    body {
-         font-family: Arial, sans-serif;
-          margin: 0;
-           padding: 0;
-            background-color: #f2f2f2; 
-        }  
-    .container {
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Path to JavaScript file -->
+    <script src="./contactform.js"></script>
+    <script src="./javascript.js"></script>
+    <title>Appointment Form</title>
+    <!-- styles-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
             width: 80%;
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-    
+
         label {
             display: block;
             margin-bottom: 5px;
         }
-    
+
         input[type="text"],
         input[type="email"],
         input[type="tel"],
@@ -36,7 +40,7 @@
             border: 1px solid #ddd;
             box-sizing: border-box;
         }
-    
+
         input[type="submit"] {
             background-color: #4CAF50;
             color: white;
@@ -46,11 +50,11 @@
             width: 100%;
             font-size: 16px;
         }
-    
+
         input[type="submit"]:hover {
             background-color: #45a049;
         }
-    
+
         select {
             width: 100%;
             padding: 8px;
@@ -58,31 +62,33 @@
             border: 1px solid #ddd;
             box-sizing: border-box;
         }
-    
+
         option {
             padding: 5px;
         }
     </style>
-    </head>
-    <!-- Structure-->
-    <body>
-         <div class="container"> 
-            <h2>Book an Appointment</h2>
-            <form id="logo-container" method="post" action="/register">
-              <label for="first-name">First Name</label>
-                 <input type="text" id="first-name" name="firstname" required>
+</head>
+
+<!-- Structure-->
+
+<body>
+    <div class="container">
+        <h2>Book an Appointment</h2>
+        <form id="logo-container " method="post" action="/register">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="firstName" required>
             <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="lastname" required>
-    
+            <input type="text" id="last-name" name="lastName" required>
+
             <label for="email">Your E-mail Address *</label>
             <input type="email" id="email" name="email" required>
-    
+
             <label for="contact-number">Contact Number *</label>
             <input type="tel" id="contact-number" name="contactNumber" required>
-    
+
             <label for="area-code">Area Code</label>
-            <input type="text" id="area-code" name="areacode">
-    
+            <input type="text" id="area-code" name="areaCode">
+
             <label for="preferred-physio">Preferred Physio</label>
             <select id="preferred-physio" name="preferredPhysio">
                 <option value="">Please Select</option>
@@ -90,13 +96,13 @@
                 <option value="physio-2">Physio 2</option>
                 <option value="physio-3">Physio 3</option>
             </select>
-    
+
             <label for="preferred-time">Preferred Time</label>
             <input type="text" id="preferred-time" name="preferredTime">
-    
+
             <label for="day">Day</label>
-            <input type="text" id="day" name="preferredDay">
-    
+            <input type="text" id="day" name="day">
+
             <label for="service">Service</label>
             <select id="service" name="service">
                 <option value="">Please Select</option>
@@ -104,9 +110,13 @@
                 <option value="service-2">Service 2</option>
                 <option value="service-3">Service 3</option>
             </select>
-    
+
             <label for="message">Your Message</label>
             <textarea id="message" name="message" rows="4" cols="50"></textarea>
-    
+
             <input type="submit" value='submit'>
-            </form>
+        </form>
+    </div>
+</body>
+
+</html>
